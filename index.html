@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 07 - The Image Swap Application</title>
+
+    <!-- css for the web page -->
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>The Image Swap Application</h1>
+        <p>Click on any image to enlarge it.</p>
+    </header>
+    <main>
+        <ul id="image_list">
+            <li>
+                <a href="images/123.jpg" title="Pizza 1">
+                    <img src="images/123.jpg" alt="Pizza1" width="150" height="150">
+                </a>
+            </li>
+
+            <li>
+                <a href="images/aboutus1.jpg" title="Pizza 2">
+                    <img src="images/aboutus1.jpg" alt="Pizza 2" width="150" height="150">
+                </a>
+            </li>
+
+            <li>
+                <a href="images/swiggy.jpg" title="Swiggy">
+                    <img src="images/swiggy.jpg" alt="Swiggy" width="150" height="150">
+                </a>
+            </li>
+
+            <li>
+                <a href="images/zomato.jpg" title="Zomato">
+                    <img src="images/zomato.jpg" alt="Zomato" width="150" height="150">
+                </a>
+            </li>
+        </ul>
+        <!-- Display the main image with caption -->
+        <h2 id="caption">
+            Pizza 1
+        </h2>
+        <p>
+            <img id="main_image" src="images/123.jpg" alt="Pizza 1" width="600">
+        </p>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="image_swap.js"></script>
+</body>
+
+</html>
